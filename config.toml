@@ -1,4 +1,4 @@
-baseURL                          = "http://anoushkajoglekar.com"   # Your domain name. Must end with "/"
+baseURL                          = "https://www.anoushkajoglekar.com/"   # Your domain name. Must end with "/"
 theme = "hugo-theme-introduction"
 DefaultContentLanguage           = "en"                    # Default language for multilingual sites
 # disqusshortname                 = ""                     # https://gohugo.io/content-management/comments
