@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/publications/natcomms_2021/</loc>
+    <loc>http://example.com/publications/natcomms_2021/</loc>
   </url>
   
   <url>
-    <loc>/projects/scisorseqr/</loc>
+    <loc>http://example.com/projects/scisorseqr/</loc>
   </url>
   
   <url>
-    <loc>/publications/naturebiotech_2018/</loc>
+    <loc>http://example.com/publications/naturebiotech_2018/</loc>
   </url>
   
   <url>
-    <loc>/projects/sliso_seq/</loc>
+    <loc>http://example.com/projects/sliso_seq/</loc>
   </url>
   
   <url>
-    <loc>/projects/biotrac/</loc>
+    <loc>http://example.com/projects/biotrac/</loc>
   </url>
   
   <url>
-    <loc>/publications/</loc>
+    <loc>http://example.com/publications/</loc>
   </url>
   
   <url>
-    <loc>/vignettes/</loc>
+    <loc>http://example.com/vignettes/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/projects/</loc>
+    <loc>http://example.com/projects/</loc>
   </url>
   
   <url>
-    <loc>/cv/</loc>
+    <loc>http://example.com/cv/</loc>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>http://example.com/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/vignettes/scisorseqr_standardworkflow/</loc>
+    <loc>http://example.com/vignettes/scisorseqr_standardworkflow/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/series/</loc>
+    <loc>http://example.com/series/</loc>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>http://example.com/tags/</loc>
   </url>
   
 </urlset>
