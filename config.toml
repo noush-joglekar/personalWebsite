@@ -7,7 +7,7 @@ googleAnalytics                 = "UA-123-45"                     # https://gohu
 #ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
-    themeStyle                   = "auto"                  # Choose "light" or "dark" or "auto"
+    themeStyle                   = "light"                  # Choose "light" or "dark" or "auto"
     favicon                      = "/img/fav.ico"          # Path to favicon file
     showRSSButton                = false                   # Show rss button in navigation
     fadeIn                       = false                    # Turn on/off the fade-in effect
@@ -111,7 +111,7 @@ googleAnalytics                 = "UA-123-45"                     # https://gohu
         languageCode     = "en-us"
         contentDir       = "content/en"
         weight           = 0
-        title            = "Introduction"
+        title            = "Anoushka"
         [languages.en.params]
-            description  = "Website Description"   # Max 160 characters show in search results
+            description  = "Personal website"   # Max 160 characters show in search results
             footerText   = "Made with R package [blogdown](https://bookdown.org/yihui/blogdown/)"  # Text to override default footer text (markdown allowed)
