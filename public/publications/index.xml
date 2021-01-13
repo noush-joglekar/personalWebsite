@@ -5,11 +5,7 @@
     <link>/publications/</link>
     <description>Recent content in Selected Publications on Introduction</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain</title>
       <link>/publications/natcomms_2021/</link>
