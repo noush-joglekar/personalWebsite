@@ -3,58 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/publications/natcomms_2021/</loc>
+    <loc>/publications/natcomms_2021/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/projects/scisorseqr/</loc>
+    <loc>/projects/scisorseqr/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/publications/naturebiotech_2018/</loc>
+    <loc>/publications/naturebiotech_2018/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/projects/sliso_seq/</loc>
+    <loc>/projects/sliso_seq/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/projects/biotrac/</loc>
+    <loc>/projects/biotrac/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/publications/</loc>
+    <loc>/publications/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/blog/</loc>
+    <loc>/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/blog/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/projects/</loc>
+    <loc>/cv/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/cv/</loc>
-  </url>
-  
-  <url>
-    <loc>https://noush-personal-website.netlify.app/</loc>
+    <loc>/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/blog/scisorseqr_standardworkflow/</loc>
+    <loc>/blog/scisorseqr_standardworkflow/</loc>
     <lastmod>2021-01-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/series/</loc>
+    <loc>/series/</loc>
   </url>
   
   <url>
-    <loc>https://noush-personal-website.netlify.app/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

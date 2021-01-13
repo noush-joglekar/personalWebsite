@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Anoushka</title>
-    <link>https://noush-personal-website.netlify.app/blog/</link>
+    <link>/blog/</link>
     <description>Recent content in Posts on Anoushka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://noush-personal-website.netlify.app/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>scisorseqr: Standard Workflow</title>
-      <link>https://noush-personal-website.netlify.app/blog/scisorseqr_standardworkflow/</link>
+      <link>/blog/scisorseqr_standardworkflow/</link>
       <pubDate>Wed, 13 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://noush-personal-website.netlify.app/blog/scisorseqr_standardworkflow/</guid>
+      <guid>/blog/scisorseqr_standardworkflow/</guid>
       <description>The scisorseqr package allows you to go from short-read, single cell assignments and a set of fastq files to a full-blown cell-type specific analysis of alternative splicing patterns.
 Software required  STARlong (and corresponding genome index file) Minimap2 if not using STARlong samtools bedtools python version &amp;gt;= 3.7 with the following libraries  pandas multiprocessing    Step1: Barcode deconvolution The first step is to deconvolve barcodes from either the PacBio or ONT fastq output For that the user needs to specify</description>
     </item>
