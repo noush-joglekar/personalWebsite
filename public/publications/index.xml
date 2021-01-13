@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Selected Publications on Introduction</title>
-    <link>https://www.anoushkajoglekar.com/publications/</link>
+    <link>https://noush-personal-website.netlify.app/publications/</link>
     <description>Recent content in Selected Publications on Introduction</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://www.anoushkajoglekar.com/publications/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://noush-personal-website.netlify.app/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain</title>
-      <link>https://www.anoushkajoglekar.com/publications/natcomms_2021/</link>
+      <link>https://noush-personal-website.netlify.app/publications/natcomms_2021/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.anoushkajoglekar.com/publications/natcomms_2021/</guid>
+      <guid>https://noush-personal-website.netlify.app/publications/natcomms_2021/</guid>
       <description>Abstract:
 Splicing varies across brain regions, but the single-cell resolution of regional variation is unclear. We present a single-cell investigation of differential isoform expression (DIE) between brain regions using single-cell long-read sequencing in mouse hippocampus and prefrontal cortex in 45 cell types at postnatal day 7 (www.isoformAtlas.com). Isoform tests for DIE show better performance than exon tests. We detect hundreds of DIE events traceable to cell types, often corresponding to functionally distinct protein isoforms.</description>
     </item>
     
     <item>
       <title>Single-cell isoform RNA sequencing characterizes isoforms in thousands of cerebellar cells</title>
-      <link>https://www.anoushkajoglekar.com/publications/naturebiotech_2018/</link>
+      <link>https://noush-personal-website.netlify.app/publications/naturebiotech_2018/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://www.anoushkajoglekar.com/publications/naturebiotech_2018/</guid>
+      <guid>https://noush-personal-website.netlify.app/publications/naturebiotech_2018/</guid>
       <description>Abstract:
 Full-length RNA sequencing (RNA-Seq) has been applied to bulk tissue, cell lines and sorted cells to characterize transcriptomes, but applying this technology to single cells has proven to be difficult, with less than ten single-cell transcriptomes having been analyzed thus far. Although single splicing events have been described for ≤200 single cells with statistical confidence, full-length mRNA analyses for hundreds of cells have not been reported. Singlecell short-read 3′ sequencing enables the identification of cellular subtypes, but full-length mRNA isoforms for these cell types cannot be profiled.</description>
     </item>
