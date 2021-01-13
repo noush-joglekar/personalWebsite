@@ -12,7 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fervent-sinoussi-f0f239.netlify.app/publications/natcomms_2021/</guid>
-      <description>Abstract Splicing varies across brain regions, but the single-cell resolution of regional variation is unclear. We present a single-cell investigation of differential isoform expression (DIE) between brain regions using single-cell long-read sequencing in mouse hippocampus and prefrontal cortex in 45 cell types at postnatal day 7 (www.isoformAtlas.com). Isoform tests for DIE show better performance than exon tests. We detect hundreds of DIE events traceable to cell types, often corresponding to functionally distinct protein isoforms.</description>
+      <description>Abstract:
+Splicing varies across brain regions, but the single-cell resolution of regional variation is unclear. We present a single-cell investigation of differential isoform expression (DIE) between brain regions using single-cell long-read sequencing in mouse hippocampus and prefrontal cortex in 45 cell types at postnatal day 7 (www.isoformAtlas.com). Isoform tests for DIE show better performance than exon tests. We detect hundreds of DIE events traceable to cell types, often corresponding to functionally distinct protein isoforms.</description>
     </item>
     
     <item>
@@ -21,7 +22,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fervent-sinoussi-f0f239.netlify.app/publications/naturebiotech_2018/</guid>
-      <description>Abstract Full-length RNA sequencing (RNA-Seq) has been applied to bulk tissue, cell lines and sorted cells to characterize transcriptomes, but applying this technology to single cells has proven to be difficult, with less than ten single-cell transcriptomes having been analyzed thus far. Although single splicing events have been described for ≤200 single cells with statistical confidence, full-length mRNA analyses for hundreds of cells have not been reported. Singlecell short-read 3′ sequencing enables the identification of cellular subtypes, but full-length mRNA isoforms for these cell types cannot be profiled.</description>
+      <description>Abstract:
+Full-length RNA sequencing (RNA-Seq) has been applied to bulk tissue, cell lines and sorted cells to characterize transcriptomes, but applying this technology to single cells has proven to be difficult, with less than ten single-cell transcriptomes having been analyzed thus far. Although single splicing events have been described for ≤200 single cells with statistical confidence, full-length mRNA analyses for hundreds of cells have not been reported. Singlecell short-read 3′ sequencing enables the identification of cellular subtypes, but full-length mRNA isoforms for these cell types cannot be profiled.</description>
     </item>
     
   </channel>
