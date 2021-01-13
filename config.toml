@@ -47,7 +47,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
         icon = "envelope" # icon name without the 'fa-'
         icon_pack = "fas"
     [[params.social]]
-        url   = "github.com/noush-joglekar/"
+        url   = "https://github.com/noush-joglekar/"
         icon  = "github" # icon name without the 'fa-'
         icon_pack = "fab"
     [[params.social]]
