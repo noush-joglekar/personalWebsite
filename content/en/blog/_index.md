@@ -1,5 +1,5 @@
 ---
-title: Vignettes
+title: Posts
 weight: 40
 ---
 

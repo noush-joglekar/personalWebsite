@@ -258,7 +258,7 @@ triHeatmap(treeDir = 'TreeTraversal_Iso/',
 (e.g. DivOligo in this case)
 
 ```{r heatmap, out.width = '60%', echo=F}
-knitr::include_graphics("./condensedCellTypes.png")
+knitr::include_graphics("condensedCellTypes.png")
 ```
 
 ### Pie Chart breaking down the significant genes
@@ -268,7 +268,7 @@ sigSplitPie(compDir = 'Uniq_TreeTraversal_Iso/Astro_ExcitNeuron_10/')
 ```
 
 ```{r pie, out.width = '60%', echo=F}
-knitr::include_graphics("./examplePie.png")
+knitr::include_graphics("examplePie.png")
 ```
 
 **NOTE** Percentage labels do not always arrange themselves neatly in the figure (requires editing by hand)

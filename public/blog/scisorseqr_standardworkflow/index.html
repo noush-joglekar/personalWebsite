@@ -1,14 +1,175 @@
----
-title: "scisorseqr: Standard Workflow"
-author: "Anoushka Joglekar"
-date: "2021-01-13"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{scisorseqr: Standard Workflow}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Website Description">
+<title>
+Scisorseqr Standard Workflow - Introduction
+</title>
 
+
+
+        
+        <meta property="og:title" content="scisorseqr: Standard Workflow - Introduction" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Website Description"/>
+<meta property="og:url" content="https://fervent-sinoussi-f0f239.netlify.app/blog/scisorseqr_standardworkflow/"/>
+<meta property="og:site_name" content="Introduction"/>
+
+
+
+
+<meta property="og:image" content="https://fervent-sinoussi-f0f239.netlify.app/home/profilePic.jpg"/>
+
+
+
+
+        
+<link rel="shortcut icon" href="/img/fav.ico">
+
+
+        
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.778f8c0624f7ae349aa2b4358579913ce6f77cb5b765b36e008240dd5024d883.css" integrity="sha256-d4&#43;MBiT3rjSaorQ1hXmRPOb3fLW3ZbNuAIJA3VAk2IM=" crossorigin="anonymous" media="screen">
+
+
+
+
+
+        
+        
+        
+        
+    </head>
+    <body>
+        <section id="top" class="section">
+            
+            <div class="container hero ">
+                
+
+<h1 class="bold-title is-1">Posts</h1>
+
+
+            </div>
+            
+            <div class="section ">
+                
+<div class="container">
+    <hr>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu " id="navMenu">
+            
+            
+            
+            
+            <a class="navbar-item" href="/">
+                
+                Home
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/publications/">
+                
+                Publications
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/projects/">
+                
+                Projects
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/blog/">
+                
+                Posts
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/cv/aj_cv.html">
+                
+                CV
+                
+            </a>
+            
+            
+            
+        </div>
+    </nav>
+    <hr>
+</div>
+
+
+
+                
+<div class="container">
+    <h2 class="title is-1 top-pad strong-post-title">
+        <a href="https://fervent-sinoussi-f0f239.netlify.app/blog/scisorseqr_standardworkflow/">scisorseqr: Standard Workflow</a>
+    </h2>
+    <div class="post-data">
+        Jan 13, 2021 |
+        5 minutes read
+    </div>
+    
+    <div class="blog-share">
+        Share this:
+        
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=scisorseqr%3a%20Standard%20Workflow%20https%3a%2f%2ffervent-sinoussi-f0f239.netlify.app%2fblog%2fscisorseqr_standardworkflow%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <i class="fab fa-twitter"></i>
+            <span class="hidden">Twitter</span>
+        </a>
+        
+        
+        
+    </div>
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+</div>
+
+<div class="container markdown top-pad">
+    
 
 
 <p>The <em>scisorseqr</em> package allows you to go from short-read, single cell assignments and a set of fastq files to a full-blown cell-type specific analysis of alternative splicing patterns.</p>
@@ -58,36 +219,36 @@ write.table(bc, file = &quot;PATH_TO_FILE&quot;, sep=&quot;\t&quot;, row.names =
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">GTTCTCGGTTGTGGAG</td>
-<td align="left">PFC_Astro</td>
-</tr>
-<tr class="even">
-<td align="left">GGTGTTATCTACTCAT</td>
-<td align="left">Hipp_InhibNeuron</td>
-</tr>
-<tr class="odd">
-<td align="left">TCTCATAAGAGGTACC</td>
+<td align="left">CTTGGCTGTCCATCCT</td>
 <td align="left">Hipp_ExciteNeuron</td>
 </tr>
 <tr class="even">
-<td align="left">TGTGTTTTCATAGCAC</td>
-<td align="left">Hipp_NIPCs</td>
+<td align="left">CACCACTAGCCGTCGT</td>
+<td align="left">Hipp_InhibNeuron</td>
 </tr>
 <tr class="odd">
-<td align="left">GCACTCTCATTGGCGC</td>
+<td align="left">AGTTGGTCACGAGGTA</td>
+<td align="left">PFC_InhibNeuron</td>
+</tr>
+<tr class="even">
+<td align="left">GACGTTACACCTATCC</td>
+<td align="left">PFC_InhibNeuron</td>
+</tr>
+<tr class="odd">
+<td align="left">TGTGGTAAGTGCAAGC</td>
+<td align="left">Hipp_Astro</td>
+</tr>
+<tr class="even">
+<td align="left">TCAACGAAGGGTATCG</td>
+<td align="left">PFC_Astro</td>
+</tr>
+<tr class="odd">
+<td align="left">AACCGCGCACAGTCGC</td>
 <td align="left">PFC_Astro</td>
 </tr>
 <tr class="even">
-<td align="left">ATCATCTAGCGGCTTC</td>
+<td align="left">GCAATCAGTGAGTGAC</td>
 <td align="left">Hipp_GranuleNB</td>
-</tr>
-<tr class="odd">
-<td align="left">CTACGTCTCTGTACGA</td>
-<td align="left">PFC_Astro</td>
-</tr>
-<tr class="even">
-<td align="left">TGCCCATAGCAGACTG</td>
-<td align="left">Hipp_NIPCs</td>
 </tr>
 </tbody>
 </table>
@@ -405,3 +566,63 @@ triHeatmap(treeDir = &#39;TreeTraversal_Iso/&#39;,
 <div id="done" class="section level2">
 <h2>Done!</h2>
 </div>
+
+</div>
+
+
+
+
+
+                
+                <div class="container">
+    <hr>
+</div>
+<div class="container has-text-centered top-pad">
+    <a href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+
+<div class="container">
+    <hr>
+</div>
+
+                <div class="section" id="footer">
+    <div class="container has-text-centered">
+    
+        Made with R package <a href="https://bookdown.org/yihui/blogdown/">blogdown</a>
+    
+    </div>
+</div>
+
+                
+            </div>
+        </section>
+        
+        
+
+
+<script src="https://fervent-sinoussi-f0f239.netlify.app/js/bundle.2ee571453a8980175e10bda96bda797cc9c4e2e745e488df68d50cef5deb57ff.js" integrity="sha256-LuVxRTqJgBdeEL2pa9p5fMnE4udF5IjfaNUM713rV/8="></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+        
+        
+        
+        
+    </body>
+</html>
