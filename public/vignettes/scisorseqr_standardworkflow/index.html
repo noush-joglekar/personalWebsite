@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+        <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+<meta name="description" content="Website Description">
+<title>
+Scisorseqr Standard Workflow - Introduction
+</title>
+
+
+
+        
+        <meta property="og:title" content="scisorseqr: Standard Workflow - Introduction" />
+<meta property="og:type" content="website" />
+<meta property="og:description" content="Website Description"/>
+<meta property="og:url" content="/vignettes/scisorseqr_standardworkflow/"/>
+<meta property="og:site_name" content="Introduction"/>
+
+
+
+
+<meta property="og:image" content="/home/profilePic.jpg"/>
+
+
+
+
+        
+<link rel="shortcut icon" href="/img/fav.ico">
+
+
+        
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.min.73eeabe084aa2975778c70c687cd49d5df8f3fbe9968d3927bf39a9a4fdae8c0.css" integrity="sha256-c&#43;6r4ISqKXV3jHDGh81J1d&#43;PP76ZaNOSe/Oamk/a6MA=" crossorigin="anonymous" media="screen">
+
+
+
+
+
+        
+        
+        
+        
+    </head>
+    <body>
+        <section id="top" class="section">
+            
+            <div class="container hero ">
+                
+                <h1 class="bold-title is-1">scisorseqr: Standard Workflow</h1>
+                
+            </div>
+            
+            <div class="section ">
+                
+<div class="container">
+    <hr>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        
+        <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false" >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+        <div class="navbar-menu " id="navMenu">
+            
+            
+            
+            
+            <a class="navbar-item" href="/">
+                
+                Home
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/publications/">
+                
+                Publications
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/projects/">
+                
+                Projects
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/vignettes/">
+                
+                Vignettes
+                
+            </a>
+            
+            
+            
+            <a class="navbar-item" href="/cv/aj_cv.html">
+                
+                CV
+                
+            </a>
+            
+            
+            
+        </div>
+    </nav>
+    <hr>
+</div>
+
+
+
+                
+    <div class="container markdown top-pad">
+        
+
+
+<p>The <em>scisorseqr</em> package allows you to go from short-read, single cell assignments and a set of fastq files to a full-blown cell-type specific analysis of alternative splicing patterns.</p>
+<div id="software-required" class="section level2">
+<h2>Software required</h2>
+<ul>
+<li>STARlong (and corresponding genome index file)</li>
+<li>Minimap2 if not using STARlong</li>
+<li>samtools</li>
+<li>bedtools</li>
+<li>python version &gt;= 3.7 with the following libraries
+<ul>
+<li>pandas</li>
+<li>multiprocessing</li>
+</ul></li>
+</ul>
+</div>
+<div id="step1-barcode-deconvolution" class="section level2">
+<h2>Step1: Barcode deconvolution</h2>
+<p>The first step is to deconvolve barcodes from either the PacBio or ONT fastq output
+For that the user needs to specify</p>
+<ul>
+<li>Tab separated Barcode-Celltype file</li>
+<li>Directory containing fastq.gz files</li>
+</ul>
+<div id="create-a-barcode---celltype-file-assuming-analysis-using-seurat" class="section level3">
+<h3>Create a barcode - celltype file assuming analysis using Seurat</h3>
+<pre class="r"><code>
+library(Seurat)
+library(tidyr)
+library(dplyr)
+
+bc &lt;- data.frame(&quot;Barcode&quot;=rownames(my_object@meta.data),
+                 &quot;Celltype&quot;=my_object@meta.data$celltype) %&gt;% 
+  separate(Barcode,into=c(&quot;BC&quot;,&quot;suffix&quot;),sep=&quot;-&quot;) %&gt;% 
+  select(-suffix) %&gt;% as.data.frame()
+
+write.table(bc, file = &quot;PATH_TO_FILE&quot;, sep=&quot;\t&quot;, row.names = FALSE,
+            col.names = FALSE, quote = FALSE)</code></pre>
+<p>The table should look something like this</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">V1</th>
+<th align="left">V2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">GTATCTTAGACCACGA</td>
+<td align="left">PFC_Oligo</td>
+</tr>
+<tr class="even">
+<td align="left">GTCAAGTAGAATTCCC</td>
+<td align="left">PFC_ExciteNeuron</td>
+</tr>
+<tr class="odd">
+<td align="left">CTCACACGTAGCGATG</td>
+<td align="left">Hipp_GranuleNB</td>
+</tr>
+<tr class="even">
+<td align="left">ATAAGAGTCTTCATGT</td>
+<td align="left">Hipp_Vasc</td>
+</tr>
+<tr class="odd">
+<td align="left">TCAGGTACAGTCAGCC</td>
+<td align="left">Hipp_Oligo</td>
+</tr>
+<tr class="even">
+<td align="left">CGAGCCAAGGCAAAGA</td>
+<td align="left">Hipp_RGL</td>
+</tr>
+<tr class="odd">
+<td align="left">TTTGTCATCACTGGGC</td>
+<td align="left">Hipp_ExciteNeuron</td>
+</tr>
+<tr class="even">
+<td align="left">CAGAATCGTCAATGTC</td>
+<td align="left">Hipp_RGL</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="use-that-file-to-locate-barcodes-from-the-fastq-files" class="section level3">
+<h3>Use that file to locate barcodes from the fastq files</h3>
+<p>Example files included in the package and loaded as follows:</p>
+<pre class="r"><code>
+bc_clust &lt;- system.file(&quot;extdata/&quot;, &quot;userInput/bc_celltype_assignments&quot;, 
+                        package = &quot;scisorseqr&quot;)
+fastqFolder &lt;- system.file(&quot;extdata/&quot;, &quot;userInput/FastqFiles&quot;, 
+                           package = &quot;scisorseqr&quot;)
+
+## run command
+GetBarcodes(fqFolder = fastqFolder, BCClustAssignFile = bc_clust, 
+            chemistry = &quot;v2&quot;, concatenate = TRUE, filterReads = FALSE)</code></pre>
+<p>You will see two output directories</p>
+<ul>
+<li>OutputRaw
+<ul>
+<li>file.CSV (One line per read)</li>
+<li>file_summary (Stats for run)</li>
+</ul></li>
+<li>OutputFiltered
+<ul>
+<li>file.CSV (One line per barcoded read with the following structure:)</li>
+</ul></li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">ReadName</th>
+<th align="left">T9_Status</th>
+<th align="left">Strand</th>
+<th align="left">T9_position</th>
+<th align="left">Barcodes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ReadX</td>
+<td align="left">poly_T_found</td>
+<td align="left">rev</td>
+<td align="left">47</td>
+<td align="left">GTCGGGTTCCAAAGTC</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Barcode_position</th>
+<th align="left">Cluster</th>
+<th align="left">UMI</th>
+<th align="left">TSO_Status</th>
+<th align="left">TSO_position</th>
+<th align="left">Length</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">22</td>
+<td align="left">Hipp_GranuleNB</td>
+<td align="left">ATGGCGGGAT</td>
+<td align="left">TSO_found</td>
+<td align="left">26</td>
+<td align="left">583</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="step2-align-your-fastq-files-to-the-reference" class="section level2">
+<h2>Step2: Align your fastq files to the reference</h2>
+<p>We have made two aligners available and compatible with our package</p>
+<ul>
+<li>STARlong</li>
+<li>Minimap2</li>
+</ul>
+<pre class="r"><code>
+## Load example data
+fastqFolder &lt;- system.file(&quot;extdata/&quot;, &quot;userInput/FastqFiles&quot;, 
+                           package = &quot;scisorseqr&quot;)
+
+STARalign(fqFolder = fastqFolder, starProgPath = &#39;~/bin/Linux_x86_64/STARlong&#39;,
+          refGenomeIndex = &#39;~/starIndex_gencode10_sequins/&#39;,
+          numThreads = 24)
+
+MMalign(fqFolder = fastqFolder, mmProgPath = &#39;~/minimap2/minimap2&#39;,
+        refGenome=&#39;~/genomes/mm10.fa&#39;,
+        numThreads = 16)</code></pre>
+<p>This process will convert all the aligned sam files to bam files, and dump the output into <em>STARoutput</em></p>
+</div>
+<div id="step3-map-and-filter-for-full-length-spliced-reads" class="section level2">
+<h2>Step3: Map and filter for full-length, spliced reads</h2>
+<pre class="r"><code>
+MapAndFilter(annoGZ=&#39;[PATH_TO_annotation.gtf.gz]&#39;,numThreads=24, 
+             seqDir = &#39;[PATH_TO_DIR/chr*.fa.gz]&#39;,
+             filterFullLength=TRUE,
+             cageBed = &#39;[PATH_TO_Cage.bed.gz]&#39;,
+             polyABed = &#39;[PATH_TO_PolyA.bed.gz]&#39;,
+             cp_distance=50)
+</code></pre>
+<p><strong>NOTE</strong> the parameter seqDir takes in a reference genome broken down by chromosome so
+as to parallelize the process.
+This function has not yet been made generalizable to loading in the full reference</p>
+<p>This will result in multiple files being stored in yet another output directory: <em>LRProcessingOutput</em></p>
+</div>
+<div id="step4-concatenate-all-the-information-collected-so-far" class="section level2">
+<h2>Step4: Concatenate all the information collected so far</h2>
+<pre class="r"><code> 
+InfoPerLongRead(barcodeOutputFile = 
+                  &#39;OutputFiltered/FilteredDeconvBC_AllFiles.csv&#39;,
+                mapAndFilterOut = &#39;LRProcessingOutput/&#39;,
+                minTimesIsoObserve = 3)
+</code></pre>
+<p>This will yield a directory <em>LongReadInfo</em> with file <strong>AllInfo</strong> which has the following structure</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">ReadName</th>
+<th align="left">Gene</th>
+<th align="left">Celltype</th>
+<th align="left">Barcode</th>
+<th align="left">UMI</th>
+<th align="left">IntronChain</th>
+<th align="left">Status</th>
+<th align="left"># Introns</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+</div>
+<div id="step5a-quantify-the-various-isoforms-observed-in-your-data" class="section level2">
+<h2>Step5a: Quantify the various isoforms observed in your data</h2>
+<p>If you provided CAGE and PolyA peaks at the MapAndFilter() stage, you can choose to quantify unique
+cage and polyA sites per gene. Otherwise the default option is False</p>
+<pre class="r"><code>IsoQuant(AllInfoFile = &#39;LongReadInfo/AllInfo&#39;,
+          Iso = TRUE, TSS = TRUE, PolyA = TRUE)
+</code></pre>
+<p>Depending on which modality you chose as <em>TRUE</em>, you will see the following files in the <em>IsoQuantOutput</em> folder:</p>
+<ul>
+<li><em>Modality</em>-<em>Modality</em>ID.csv</li>
+<li>Num<em>Modality</em>PerCluster</li>
+</ul>
+<p>These will be used for the differential splicing analysis step</p>
+</div>
+<div id="step5b-optional-quantify-the-various-exons-observed-in-your-data" class="section level2">
+<h2>Step5b: [OPTIONAL] Quantify the various exons observed in your data</h2>
+<p>For ONT reads we don’t have too much confidence in this method and recommend using
+our sister package IsoQuant.</p>
+<p>This function however, works for annotated as well as novel exons</p>
+<pre class="r"><code>ExonQuant(AllInfoFile = &#39;LongReadInfo/AllInfo&#39;, 
+          groupingFactor = &quot;Celltype&quot;, threshold = 10)</code></pre>
+<p>This will output the quantifications to a separate folder <em>ExonQuantOutput</em></p>
+</div>
+<div id="step6-differential-isoform-analysis" class="section level2">
+<h2>Step6: Differential isoform analysis</h2>
+<p>This step can be done using various settings for various modalities. Options include</p>
+<ul>
+<li>Full-length isoform (Iso)</li>
+<li>TSS</li>
+<li>PolyA</li>
+<li>Exon (Refer to step 6b)</li>
+</ul>
+<p>Depending on the modality chosen, this function automatically detects the input</p>
+<p>It also requires a tab-separated config file in the following format to be provided by the user</p>
+<p><strong>NOTE</strong>: Header here just for demonstration</p>
+<table>
+<colgroup>
+<col width="10%" />
+<col width="47%" />
+<col width="10%" />
+<col width="31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Comparison1</th>
+<th align="left">Celltypes</th>
+<th align="left">Comparison2</th>
+<th align="left">Celltypes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">HippNeuron</td>
+<td align="left">Hipp_ExciteNeuron,Hipp_InhibNeuron</td>
+<td align="left">PFCNeuron</td>
+<td align="left">PFC_ExciteNeuron,PFC_InhibNeuron</td>
+</tr>
+<tr class="even">
+<td align="left">HippInhib</td>
+<td align="left">Hipp_InhibNeuron</td>
+<td align="left">PFCInhib</td>
+<td align="left">PFC_InhibNeuron</td>
+</tr>
+<tr class="odd">
+<td align="left">HippExcite</td>
+<td align="left">Hipp_ExciteNeuron</td>
+<td align="left">HippInhib</td>
+<td align="left">Hipp_InhibNeuron</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>config &lt;- system.file(&quot;extdata/&quot;, &quot;userInput/config&quot;, 
+                      package = &quot;scisorseqr&quot;)
+
+DiffSplicingAnalysis(configFile = config, 
+                     typeOfTest = &#39;Iso&#39;, 
+                     minNumReads = 25, is.hier = FALSE)
+
+## or for exons
+DiffSplicingAnalysis(configFile = config, 
+                     typeOfTest = &#39;Exon&#39;, 
+                     minNumReads = 25, 
+                     is.hier = FALSE)</code></pre>
+<p>Assuming you run this command, each comparison (line in the config file) yields a separate sub-directory in the folder <em>TreeTraveral_Iso</em></p>
+<p>The most important file in that output directory is the results file, which has the following structure:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Gene</th>
+<th align="left">pvals</th>
+<th align="left">dPI</th>
+<th align="left">maxDeltaPI_ix1</th>
+<th align="left">maxDeltaPI_ix2</th>
+<th align="left">FDR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">ENSMUSG00000000001.4</td>
+<td align="left">0.563702861650773</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">NA</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">ENSMUSG00000000078.7</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">NA</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">ENSMUSG00000000088.7</td>
+<td align="left">1</td>
+<td align="left">0.0714285714285714</td>
+<td align="left">1</td>
+<td align="left">NA</td>
+<td align="left">1</td>
+</tr>
+<tr class="even">
+<td align="left">ENSMUSG00000000326.13</td>
+<td align="left">0.343030146138244</td>
+<td align="left">0.666666666666667</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>NOTE</strong> Deeper data will yield significant values. These ^ are just a product of the example data subset we have provided with the package</p>
+<p>You can use the above output to plot your significant genes</p>
+</div>
+<div id="step7-visualizations" class="section level2">
+<h2>Step7: Visualizations</h2>
+<div id="triangular-heatmap" class="section level3">
+<h3>Triangular Heatmap</h3>
+<p>This function plots a triangular heatmap of percentage DIE genes of pairwise comparisons in a directory
+It also takes in an untitled file list of cell types to be plotted as follows:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">Hipp_Astro</td>
+</tr>
+<tr class="even">
+<td align="left">Hipp_ChorPlex</td>
+</tr>
+<tr class="odd">
+<td align="left">Hipp_DivOligo</td>
+</tr>
+<tr class="even">
+<td align="left">Hipp_Ependymal</td>
+</tr>
+<tr class="odd">
+<td align="left">.</td>
+</tr>
+<tr class="even">
+<td align="left">.</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>
+condensedCellTypes = system.file(&quot;extdata/&quot;, &quot;userInput/condensedCellTypes&quot;, 
+                      package = &quot;scisorseqr&quot;)
+
+triHeatmap(treeDir = &#39;TreeTraversal_Iso/&#39;,
+           comparisonList =condensedCellTypes, 
+           outName =condensedCellTypes)</code></pre>
+<p><strong>NOTE</strong> Cell-type labels should correspond to the barcode-celltype list. If you input a cell-type for which pairwise DIE has not been calculated, it will output all zeros
+(e.g. DivOligo in this case)</p>
+<p><img src="condensedCellTypes.png" width="60%" /></p>
+</div>
+<div id="pie-chart-breaking-down-the-significant-genes" class="section level3">
+<h3>Pie Chart breaking down the significant genes</h3>
+<pre class="r"><code>sigSplitPie(compDir = &#39;Uniq_TreeTraversal_Iso/Astro_ExcitNeuron_10/&#39;)</code></pre>
+<p><img src="examplePie.png" width="60%" /></p>
+<p><strong>NOTE</strong> Percentage labels do not always arrange themselves neatly in the figure (requires editing by hand)</p>
+</div>
+</div>
+<div id="done" class="section level2">
+<h2>Done!</h2>
+</div>
+
+    </div>
+    
+    
+
+
+
+                
+                <div class="container">
+    <hr>
+</div>
+<div class="container has-text-centered top-pad">
+    <a href="#top">
+        <i class="fa fa-arrow-up"></i>
+    </a>
+</div>
+
+<div class="container">
+    <hr>
+</div>
+
+                <div class="section" id="footer">
+    <div class="container has-text-centered">
+    
+        Made with R package <a href="https://bookdown.org/yihui/blogdown/">blogdown</a>
+    
+    </div>
+</div>
+
+                
+            </div>
+        </section>
+        
+        
+
+
+<script src="/js/bundle.2ee571453a8980175e10bda96bda797cc9c4e2e745e488df68d50cef5deb57ff.js" integrity="sha256-LuVxRTqJgBdeEL2pa9p5fMnE4udF5IjfaNUM713rV/8="></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+        
+        
+        
+        
+    </body>
+</html>

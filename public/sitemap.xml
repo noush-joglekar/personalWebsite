@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/publications/natcomms_2021/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/scisorseqr/</loc>
+  </url>
+  
+  <url>
+    <loc>/publications/naturebiotech_2018/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/sliso_seq/</loc>
+  </url>
+  
+  <url>
+    <loc>/projects/biotrac/</loc>
+  </url>
+  
+  <url>
+    <loc>/publications/</loc>
+  </url>
+  
+  <url>
+    <loc>/vignettes/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/</loc>
+  </url>
+  
+  <url>
+    <loc>/cv/</loc>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/vignettes/scisorseqr_standardworkflow/</loc>
+    <lastmod>2021-01-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+</urlset>
