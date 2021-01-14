@@ -54,6 +54,10 @@
             {{ $pages = $pages | append . }}
         {{ end }}
 
+        {{ with .Site.GetPage "/publications" }}
+            {{ $pages = $pages | append . }}
+        {{ end }}
+
         {{ range sort $pages "Params.weight" }}
         {{ if ne .Name "contact.md" }}
         {{ if .File }}
@@ -63,6 +67,9 @@
         {{ else if eq (os.Stat .File.Dir).Name "blog" }}
             <!-- Let`s show some blog posts -->
             {{ partial "home/blog.html" . }}
+        {{ else if eq (os.Stat .File.Dir).Name "publications" }}
+            <!-- Let`s show some blog posts -->
+            {{ partial "home/publications.html" . }}
         {{ else }}
 
         <!-- Range through all sections in /home execept contact.md -->

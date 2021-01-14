@@ -4,7 +4,7 @@ theme = "hugo-theme-introduction"
 DefaultContentLanguage           = "en"                    # Default language for multilingual sites
 # disqusshortname                 = ""                     # https://gohugo.io/content-management/comments
 googleAnalytics                 = "UA-123-45"                     # https://gohugo.io/templates/internal/#google-analytics
-#ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
 [params]
     themeStyle                   = "light"                  # Choose "light" or "dark" or "auto"

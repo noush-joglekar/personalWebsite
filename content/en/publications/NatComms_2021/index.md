@@ -1,11 +1,13 @@
 ---
-title: "A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain"
+title: _Nature Communications, 2021_
 resources:
 - params:
     weight: -100
     src: Calder-Cover.jpg
 weight: 1
 ---
+
+### A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain
 
 **Abstract:**
 

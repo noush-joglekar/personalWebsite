@@ -7,8 +7,8 @@
         </h2>
         <div class="section">
             <div class="columns is-multiline">
-                {{ $totalProjects := (len .Pages) }}
-                {{ $numberOfPublicationsToShow := .Site.Params.home.numberOfPublicationsToShow | default $totalProjects }}
+                {{ $totalPublications := (len .Pages) }}
+                {{ $numberOfPublicationsToShow := .Site.Params.home.numberOfPublicationsToShow | default $totalPublications }}
                 {{ range $index, $element := .Pages.ByWeight | first $numberOfPublicationsToShow }}
                 {{ $width := "302x" }}
                 {{ $columWidth := "is-one-third" }}
@@ -17,7 +17,7 @@
                   {{ $width = "490x" }}
                 {{ end}}
                 <div class="column {{ $columWidth }}">
-                    <div class="card" data-target="#project-{{ $index }}">
+                    <div class="card" data-target="#publication-{{ $index }}">
                         <div class="card-image">
                             <figure class="image is-3by4">
                                 <a {{ if .Params.external_link }} href="{{ .Params.external_link }}" {{ end }}>
@@ -40,7 +40,7 @@
                 {{ end }}
             </div>
         </div>
-        {{ if lt $numberOfPublicationsToShow $totalProjects }}
+        {{ if lt $numberOfPublicationsToShow $totalPublications }}
         <div class="container has-text-centered top-pad">
             <a href="{{ .Permalink }}">{{ i18n "index_publications_allPublications" . }}</a>
         </div>

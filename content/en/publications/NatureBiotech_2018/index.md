@@ -1,11 +1,13 @@
 ---
-title: "Single-cell isoform RNA sequencing characterizes isoforms in thousands of cerebellar cells"
+title: _Nature Biotechnology, 2018_
 resources:
 - params:
     weight: -100
     src: scisorseq_schematic.png
 weight: 1
 ---
+
+### Single-cell isoform RNA sequencing characterizes isoforms in thousands of cerebellar cells
 
 **Abstract:**
 
