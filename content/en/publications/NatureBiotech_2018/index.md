@@ -4,7 +4,7 @@ resources:
 - params:
     weight: -100
     src: scisorseq_schematic.png
-weight: 1
+weight: 3
 ---
 
 ### Single-cell isoform RNA sequencing characterizes isoforms in thousands of cerebellar cells

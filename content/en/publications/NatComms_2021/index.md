@@ -4,7 +4,7 @@ resources:
 - params:
     weight: -100
     src: Calder-Cover.jpg
-weight: 2
+weight: 1
 ---
 
 ### A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain
