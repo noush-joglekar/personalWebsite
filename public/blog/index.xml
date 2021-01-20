@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Anoushka</title>
-    <link>https://www.anoushkajoglekar.com/blog.html</link>
+    <link>https://anoushkajoglekar.com/blog.html</link>
     <description>Recent content in Posts on Anoushka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://www.anoushkajoglekar.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://anoushkajoglekar.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>scisorseqr: Standard Workflow</title>
-      <link>https://www.anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html</link>
-      <pubDate>Tue, 19 Jan 2021 00:00:00 +0000</pubDate>
+      <link>https://anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://www.anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html</guid>
+      <guid>https://anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html</guid>
       <description>The scisorseqr package allows you to go from short-read, single cell assignments and a set of fastq files to a full-blown cell-type specific analysis of alternative splicing patterns.
-Software required  STARlong (and corresponding genome index file) Minimap2 if not using STARlong samtools bedtools python version &amp;gt;= 3.7 with the following libraries  pandas multiprocessing    Step1: Barcode deconvolution The first step is to deconvolve barcodes from either the PacBio or ONT fastq output For that the user needs to specify</description>
+Software required  STARlong (and corresponding genome index file) Minimap2 if not using STARlong samtools bedtools python version &amp;gt;= 3.7 with the following libraries  pandas multiprocessing    Step 1: Barcode deconvolution The first step is to deconvolve barcodes from either the PacBio or ONT fastq output For that the user needs to specify</description>
     </item>
     
   </channel>

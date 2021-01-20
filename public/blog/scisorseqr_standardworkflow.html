@@ -19,13 +19,13 @@ Scisorseqr Standard Workflow - Anoushka
         <meta property="og:title" content="scisorseqr: Standard Workflow - Anoushka" />
 <meta property="og:type" content="website" />
 <meta property="og:description" content="Personal website"/>
-<meta property="og:url" content="https://www.anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html"/>
+<meta property="og:url" content="https://anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html"/>
 <meta property="og:site_name" content="Anoushka"/>
 
 
 
 
-<meta property="og:image" content="https://www.anoushkajoglekar.com/home/profilePic.jpg"/>
+<meta property="og:image" content="https://anoushkajoglekar.com/home/profilePic.jpg"/>
 
 
 
@@ -40,7 +40,7 @@ Scisorseqr Standard Workflow - Anoushka
 
 
 
-<link rel="stylesheet" href="/css/main.min.7234953717df3eaff5f4783a8c545c65897f4ac5d802aa4deabcf2538ec29449.css" integrity="sha256-cjSVNxffPq/19Hg6jFRcZYl/SsXYAqpN6rzyU47ClEk=" crossorigin="anonymous" media="screen">
+<link rel="stylesheet" href="/css/main.min.css" crossorigin="anonymous" media="screen">
 
 
 
@@ -128,17 +128,17 @@ Scisorseqr Standard Workflow - Anoushka
                 
 <div class="container">
     <h2 class="title is-1 top-pad strong-post-title">
-        <a href="https://www.anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html">scisorseqr: Standard Workflow</a>
+        <a href="https://anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html">scisorseqr: Standard Workflow</a>
     </h2>
     <div class="post-data">
-        Jan 19, 2021 |
+        Jan 20, 2021 |
         5 minutes read
     </div>
     
     <div class="blog-share">
         Share this:
         
-        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=scisorseqr%3a%20Standard%20Workflow%20https%3a%2f%2fwww.anoushkajoglekar.com%2fblog%2fscisorseqr_standardworkflow.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=scisorseqr%3a%20Standard%20Workflow%20https%3a%2f%2fanoushkajoglekar.com%2fblog%2fscisorseqr_standardworkflow.html" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <i class="fab fa-twitter"></i>
             <span class="hidden">Twitter</span>
         </a>
@@ -176,8 +176,8 @@ Scisorseqr Standard Workflow - Anoushka
 <div id="software-required" class="section level2">
 <h2>Software required</h2>
 <ul>
-<li>STARlong (and corresponding genome index file)</li>
-<li>Minimap2 if not using STARlong</li>
+<li><a href="https://github.com/alexdobin/STAR/">STARlong</a> (and corresponding genome index file)</li>
+<li><a href="https://github.com/lh3/minimap2">Minimap2</a> if not using STARlong</li>
 <li>samtools</li>
 <li>bedtools</li>
 <li>python version &gt;= 3.7 with the following libraries
@@ -187,8 +187,8 @@ Scisorseqr Standard Workflow - Anoushka
 </ul></li>
 </ul>
 </div>
-<div id="step1-barcode-deconvolution" class="section level2">
-<h2>Step1: Barcode deconvolution</h2>
+<div id="step-1-barcode-deconvolution" class="section level2">
+<h2>Step 1: Barcode deconvolution</h2>
 <p>The first step is to deconvolve barcodes from either the PacBio or ONT fastq output
 For that the user needs to specify</p>
 <ul>
@@ -219,36 +219,36 @@ write.table(bc, file = &quot;PATH_TO_FILE&quot;, sep=&quot;\t&quot;, row.names =
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">TCTCATATCTCTAGGA</td>
+<td align="left">GATCAGTAGGGTGTGT</td>
 <td align="left">Hipp_GranuleNB</td>
 </tr>
 <tr class="even">
-<td align="left">CATATTCTCGGTCTAA</td>
-<td align="left">Hipp_Astro</td>
-</tr>
-<tr class="odd">
-<td align="left">GTTTCTACATCCGCGA</td>
-<td align="left">Hipp_ExciteNeuron</td>
-</tr>
-<tr class="even">
-<td align="left">GAACGGAAGTATCGAA</td>
+<td align="left">TGGCGCACACCCAGTG</td>
 <td align="left">PFC_Astro</td>
 </tr>
 <tr class="odd">
-<td align="left">GGATTACGTTAAGACA</td>
-<td align="left">Hipp_GranuleNB</td>
+<td align="left">CAACTAGTCCAGTAGT</td>
+<td align="left">PFC_Oligo</td>
 </tr>
 <tr class="even">
-<td align="left">AGCTCTCGTCAAACTC</td>
+<td align="left">TCCACACGTCTCTCTG</td>
+<td align="left">Hipp_RGL</td>
+</tr>
+<tr class="odd">
+<td align="left">AATCCAGCAGTATCTG</td>
+<td align="left">PFC_Oligo</td>
+</tr>
+<tr class="even">
+<td align="left">TTAGTTCGTGCGATAG</td>
 <td align="left">Hipp_GranuleNB</td>
 </tr>
 <tr class="odd">
-<td align="left">GAATGAATCAGAAATG</td>
-<td align="left">PFC_Vasc</td>
+<td align="left">CGCTTCAGTCAAAGCG</td>
+<td align="left">Hipp_NIPCs</td>
 </tr>
 <tr class="even">
-<td align="left">GCAGCCAGTCGAAAGC</td>
-<td align="left">Hipp_Oligo</td>
+<td align="left">AGAGCTTAGAATGTTG</td>
+<td align="left">Hipp_RGL</td>
 </tr>
 </tbody>
 </table>
@@ -321,8 +321,8 @@ GetBarcodes(fqFolder = fastqFolder, BCClustAssignFile = bc_clust,
 </table>
 </div>
 </div>
-<div id="step2-align-your-fastq-files-to-the-reference" class="section level2">
-<h2>Step2: Align your fastq files to the reference</h2>
+<div id="step-2-align-your-fastq-files-to-the-reference" class="section level2">
+<h2>Step 2: Align your fastq files to the reference</h2>
 <p>We have made two aligners available and compatible with our package</p>
 <ul>
 <li>STARlong</li>
@@ -342,8 +342,9 @@ MMalign(fqFolder = fastqFolder, mmProgPath = &#39;~/minimap2/minimap2&#39;,
         numThreads = 16)</code></pre>
 <p>This process will convert all the aligned sam files to bam files, and dump the output into <em>STARoutput</em></p>
 </div>
-<div id="step3-map-and-filter-for-full-length-spliced-reads" class="section level2">
-<h2>Step3: Map and filter for full-length, spliced reads</h2>
+<div id="step-3-map-and-filter-for-full-length-spliced-reads" class="section level2">
+<h2>Step 3: Map and filter for full-length, spliced reads</h2>
+<p>We used annotated <a href="https://fantom.gsc.riken.jp/5/datafiles/reprocessed/mm10_latest/extra/CAGE_peaks/">CAGE peaks</a> and <a href="https://polyasite.unibas.ch/atlas">PolyA sites</a> for our study</p>
 <pre class="r"><code>
 MapAndFilter(annoGZ=&#39;[PATH_TO_annotation.gtf.gz]&#39;,numThreads=24, 
              seqDir = &#39;[PATH_TO_DIR/chr*.fa.gz]&#39;,
@@ -357,8 +358,8 @@ as to parallelize the process.
 This function has not yet been made generalizable to loading in the full reference</p>
 <p>This will result in multiple files being stored in yet another output directory: <em>LRProcessingOutput</em></p>
 </div>
-<div id="step4-concatenate-all-the-information-collected-so-far" class="section level2">
-<h2>Step4: Concatenate all the information collected so far</h2>
+<div id="step-4-concatenate-all-the-information-collected-so-far" class="section level2">
+<h2>Step 4: Concatenate all the information collected so far</h2>
 <pre class="r"><code> 
 InfoPerLongRead(barcodeOutputFile = 
                   &#39;OutputFiltered/FilteredDeconvBC_AllFiles.csv&#39;,
@@ -383,8 +384,8 @@ InfoPerLongRead(barcodeOutputFile =
 </tbody>
 </table>
 </div>
-<div id="step5a-quantify-the-various-isoforms-observed-in-your-data" class="section level2">
-<h2>Step5a: Quantify the various isoforms observed in your data</h2>
+<div id="step-5a-quantify-the-various-isoforms-observed-in-your-data" class="section level2">
+<h2>Step 5a: Quantify the various isoforms observed in your data</h2>
 <p>If you provided CAGE and PolyA peaks at the MapAndFilter() stage, you can choose to quantify unique
 cage and polyA sites per gene. Otherwise the default option is False</p>
 <pre class="r"><code>IsoQuant(AllInfoFile = &#39;LongReadInfo/AllInfo&#39;,
@@ -397,8 +398,8 @@ cage and polyA sites per gene. Otherwise the default option is False</p>
 </ul>
 <p>These will be used for the differential splicing analysis step</p>
 </div>
-<div id="step5b-optional-quantify-the-various-exons-observed-in-your-data" class="section level2">
-<h2>Step5b: [OPTIONAL] Quantify the various exons observed in your data</h2>
+<div id="step-5b-optional-quantify-the-various-exons-observed-in-your-data" class="section level2">
+<h2>Step 5b: [OPTIONAL] Quantify the various exons observed in your data</h2>
 <p>For ONT reads we don’t have too much confidence in this method and recommend using
 our sister package IsoQuant.</p>
 <p>This function however, works for annotated as well as novel exons</p>
@@ -406,8 +407,8 @@ our sister package IsoQuant.</p>
           groupingFactor = &quot;Celltype&quot;, threshold = 10)</code></pre>
 <p>This will output the quantifications to a separate folder <em>ExonQuantOutput</em></p>
 </div>
-<div id="step6-differential-isoform-analysis" class="section level2">
-<h2>Step6: Differential isoform analysis</h2>
+<div id="step-6-differential-isoform-analysis" class="section level2">
+<h2>Step 6: Differential isoform analysis</h2>
 <p>This step can be done using various settings for various modalities. Options include</p>
 <ul>
 <li>Full-length isoform (Iso)</li>
@@ -517,8 +518,8 @@ DiffSplicingAnalysis(configFile = config,
 <p><strong>NOTE</strong> Deeper data will yield significant values. These ^ are just a product of the example data subset we have provided with the package</p>
 <p>You can use the above output to plot your significant genes</p>
 </div>
-<div id="step7-visualizations" class="section level2">
-<h2>Step7: Visualizations</h2>
+<div id="step-7-visualizations" class="section level2">
+<h2>Step 7: Visualizations</h2>
 <div id="triangular-heatmap" class="section level3">
 <h3>Triangular Heatmap</h3>
 <p>This function plots a triangular heatmap of percentage DIE genes of pairwise comparisons in a directory
@@ -602,7 +603,7 @@ triHeatmap(treeDir = &#39;TreeTraversal_Iso/&#39;,
         
 
 
-<script src="https://www.anoushkajoglekar.com/js/bundle.2ee571453a8980175e10bda96bda797cc9c4e2e745e488df68d50cef5deb57ff.js" integrity="sha256-LuVxRTqJgBdeEL2pa9p5fMnE4udF5IjfaNUM713rV/8="></script>
+<script src="https://anoushkajoglekar.com/js/bundle.2ee571453a8980175e10bda96bda797cc9c4e2e745e488df68d50cef5deb57ff.js" integrity="sha256-LuVxRTqJgBdeEL2pa9p5fMnE4udF5IjfaNUM713rV/8="></script>
 
 
 <script type="application/javascript">
