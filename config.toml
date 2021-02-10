@@ -8,7 +8,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 uglyurls = true
 
 [params]
-    themeStyle                   = "light"                  # Choose "light" or "dark" or "auto"
+    themeStyle                   = "auto"                  # Choose "light" or "dark" or "auto"
     favicon                      = "/img/fav.ico"          # Path to favicon file
     showRSSButton                = false                   # Show rss button in navigation
     fadeIn                       = false                    # Turn on/off the fade-in effect
