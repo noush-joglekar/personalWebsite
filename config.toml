@@ -30,8 +30,8 @@ uglyurls = true
         localTime                = false                    # Show your current local time in contact section
         timeZone                 = "America/New_York"   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
         timeFormat               = "en-US"                 # Language specific format to use
-    [params.projects]
-        useTwoColumns            = false                   # Use a layout with two columns instead of three
+    #[params.projects]
+    #    useTwoColumns            = false                   # Use a layout with two columns instead of three
     [params.publications]
         useTwoColumns            = true                   # Use a layout with two columns instead of three
 
@@ -69,10 +69,10 @@ uglyurls = true
    name    = "Home"
    url     = "/"
    weight  = 10
-[[menu.main]]
-   name    = "Posts"
-   url     = "/blog/"
-   weight  = 50
+#[[menu.main]]
+#   name    = "Posts"
+#   url     = "/blog/"
+#   weight  = 50
 [[menu.main]]
    name    = "Publications"
    url     = "/publications/"
@@ -81,10 +81,10 @@ uglyurls = true
    name    = "CV"
    url     = "/cv/aj_cv.html"
    weight  = 60
-[[menu.main]]
-   name    = "Projects"
-   url     = "/projects/"
-   weight  = 40
+#[[menu.main]]
+#   name    = "Projects"
+#   url     = "/projects/"
+#   weight  = 40
 
 # We only use tag as a taxonomies
 # You can add more by yourself
