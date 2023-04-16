@@ -5,16 +5,16 @@ weight: 30
 
 Here is a highlight of my more recent/ relevant papers and preprints.
 
-In prep:
+## In prep:
 
 Belchikov N<sup>#</sup>, Hu W<sup>#</sup>, Fan L<sup>#</sup>, **Joglekar A**, … Gan L, Tilgner HU. A single-cell long-read isoform resolved case-control study of frontotemporal dementia reveals cell-type specific and broad splicing dysregulation in post-mortem human brain.
 
 **Joglekar A<sup>#</sup>**,Foord C^#, Jarroux J^#, Pollard S, Tilgner HU. Single-cell studies of transcript isoforms.
 
-Preprints:
+## Preprints:
 **Joglekar A**, Hu W, Zhang B, Narykov O, Diekhans M, ..., Ross ME, Tilgner HU. Single-cell long-read mRNA isoform regulation is pervasive across mammalian brain regions, cell types, and development *biorxiv*
 
-Selected publications:
+## Selected publications:
 
 Stein AN, **Joglekar A**, Poon CL, Tilgner HU. ScisorWiz: Visualizing Differential Isoform Expression in Single-Cell Long-Read Data. *Bioinformatics*. 2022 May 23. doi: 10.1093/bioinformatics/btac340. PMID: 35604081.
     
