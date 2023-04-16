@@ -12,7 +12,7 @@ Belchikov N<sup>#</sup>, Hu W<sup>#</sup>, Fan L<sup>#</sup>, **Joglekar A**, â€
 **Joglekar A<sup>#</sup>**,Foord C<sup>#</sup>, Jarroux J<sup>#</sup>, Pollard S, Tilgner HU. Single-cell studies of transcript isoforms.
 
 #### Preprints:
-**Joglekar A**, Hu W, Zhang B, Narykov O, Diekhans M, ..., Ross ME, Tilgner HU. Single-cell long-read mRNA isoform regulation is pervasive across mammalian brain regions, cell types, and development *biorxiv*
+**Joglekar A**, Hu W, Zhang B, Narykov O, Diekhans M, ..., Ross ME, Tilgner HU. Single-cell long-read mRNA isoform regulation is pervasive across mammalian brain regions, cell types, and development *[biorxiv](https://www.biorxiv.org/content/10.1101/2023.04.02.535281v1.full)*
 
 #### Selected publications:
 
