@@ -30,8 +30,8 @@ uglyurls = true
         localTime                = false                    # Show your current local time in contact section
         timeZone                 = "America/New_York"   # Your timezone as in the TZ* column of this list: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
         timeFormat               = "en-US"                 # Language specific format to use
-    #[params.projects]
-    #    useTwoColumns            = false                   # Use a layout with two columns instead of three
+    [params.projects]
+        useTwoColumns            = false                   # Use a layout with two columns instead of three
     [params.publications]
         useTwoColumns            = true                   # Use a layout with two columns instead of three
 
@@ -60,7 +60,7 @@ uglyurls = true
         icon  = "linkedin-in" # icon name without the 'fa-'
         icon_pack = "fab"
     [[params.social]]
-        url   = "https://scholar.google.com/citations?user=zH6U8uIAAAAJ&hl=en"
+        url   = "https://scholar.google.co.in/citations?user=zH6U8uIAAAAJ&hl=en"
         icon  = "user-graduate" # icon name without the 'fa-'
         icon_pack = "fas"
 
