@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Selected Publications on Anoushka</title>
-    <link>/publications.html</link>
+    <link>https://anoushkajoglekar.com/publications.html</link>
     <description>Recent content in Selected Publications on Anoushka</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/publications/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://anoushkajoglekar.com/publications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>_Nature Communications, 2021_</title>
-      <link>/publications/natcomms_2021.html</link>
+      <link>https://anoushkajoglekar.com/publications/natcomms_2021.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/publications/natcomms_2021.html</guid>
+      <guid>https://anoushkajoglekar.com/publications/natcomms_2021.html</guid>
       <description>A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain Abstract:
 Splicing varies across brain regions, but the single-cell resolution of regional variation is unclear. We present a single-cell investigation of differential isoform expression (DIE) between brain regions using single-cell long-read sequencing in mouse hippocampus and prefrontal cortex in 45 cell types at postnatal day 7 (www.isoformAtlas.com). Isoform tests for DIE show better performance than exon tests.</description>
     </item>
     
     <item>
-      <title>_Nature Biotechnology, 2018_</title>
-      <link>/publications/naturebiotech_2018.html</link>
+      <title>_Nature Biotechnology, 2022_</title>
+      <link>https://anoushkajoglekar.com/publications/naturebiotech_2022.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/publications/naturebiotech_2018.html</guid>
-      <description>Single-cell isoform RNA sequencing characterizes isoforms in thousands of cerebellar cells Abstract:
-Full-length RNA sequencing (RNA-Seq) has been applied to bulk tissue, cell lines and sorted cells to characterize transcriptomes, but applying this technology to single cells has proven to be difficult, with less than ten single-cell transcriptomes having been analyzed thus far. Although single splicing events have been described for ≤200 single cells with statistical confidence, full-length mRNA analyses for hundreds of cells have not been reported.</description>
+      <guid>https://anoushkajoglekar.com/publications/naturebiotech_2022.html</guid>
+      <description>Single-nuclei isoform RNA sequencing unlocks barcoded exon connectivity in frozen brain tissue Abstract:
+Single-nuclei RNA sequencing characterizes cell types at the gene level. However, compared to single-cell approaches, many single-nuclei cDNAs are purely intronic, lack barcodes and hinder the study of isoforms. Here we present single-nuclei isoform RNA sequencing (SnISOr-Seq). Using microfluidics, PCR-based artifact removal, target enrichment and long-read sequencing, SnISOr-Seq increased barcoded, exon-spanning long reads 7.5-fold compared to naive long-read single-nuclei sequencing.</description>
     </item>
     
   </channel>

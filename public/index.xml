@@ -2,78 +2,78 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Anoushka</title>
-    <link>/</link>
+    <link>https://anoushkajoglekar.com/</link>
     <description>Recent content on Anoushka</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://anoushkajoglekar.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>_Nature Communications, 2021_</title>
-      <link>/publications/natcomms_2021.html</link>
+      <link>https://anoushkajoglekar.com/publications/natcomms_2021.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/publications/natcomms_2021.html</guid>
+      <guid>https://anoushkajoglekar.com/publications/natcomms_2021.html</guid>
       <description>A spatially resolved brain region- and cell type-specific isoform atlas of the postnatal mouse brain Abstract:
 Splicing varies across brain regions, but the single-cell resolution of regional variation is unclear. We present a single-cell investigation of differential isoform expression (DIE) between brain regions using single-cell long-read sequencing in mouse hippocampus and prefrontal cortex in 45 cell types at postnatal day 7 (www.isoformAtlas.com). Isoform tests for DIE show better performance than exon tests.</description>
     </item>
     
     <item>
       <title>scisorseqr</title>
-      <link>/projects/scisorseqr.html</link>
+      <link>https://anoushkajoglekar.com/projects/scisorseqr.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/scisorseqr.html</guid>
+      <guid>https://anoushkajoglekar.com/projects/scisorseqr.html</guid>
       <description>Quick access to the scisorseqr GitHub page. I describe the workflow of the package and all code is included under the MIT license.
 The vignette is hosted on a separate page of this website under Vignettes</description>
     </item>
     
     <item>
       <title>Spatial isoform expression</title>
-      <link>/projects/sliso_seq.html</link>
+      <link>https://anoushkajoglekar.com/projects/sliso_seq.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/sliso_seq.html</guid>
+      <guid>https://anoushkajoglekar.com/projects/sliso_seq.html</guid>
       <description>Exclusively spatial data pulled from the Nature Communications paper
 Same shiny app as before except with full-length transcripts instead of exons. Also kept an SQLite backend so the server doesn&amp;rsquo;t crash.
 Access shiny app here</description>
     </item>
     
     <item>
-      <title>_Nature Biotechnology, 2018_</title>
-      <link>/publications/naturebiotech_2018.html</link>
+      <title>_Nature Biotechnology, 2022_</title>
+      <link>https://anoushkajoglekar.com/publications/naturebiotech_2022.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/publications/naturebiotech_2018.html</guid>
-      <description>Single-cell isoform RNA sequencing characterizes isoforms in thousands of cerebellar cells Abstract:
-Full-length RNA sequencing (RNA-Seq) has been applied to bulk tissue, cell lines and sorted cells to characterize transcriptomes, but applying this technology to single cells has proven to be difficult, with less than ten single-cell transcriptomes having been analyzed thus far. Although single splicing events have been described for ≤200 single cells with statistical confidence, full-length mRNA analyses for hundreds of cells have not been reported.</description>
+      <guid>https://anoushkajoglekar.com/publications/naturebiotech_2022.html</guid>
+      <description>Single-nuclei isoform RNA sequencing unlocks barcoded exon connectivity in frozen brain tissue Abstract:
+Single-nuclei RNA sequencing characterizes cell types at the gene level. However, compared to single-cell approaches, many single-nuclei cDNAs are purely intronic, lack barcodes and hinder the study of isoforms. Here we present single-nuclei isoform RNA sequencing (SnISOr-Seq). Using microfluidics, PCR-based artifact removal, target enrichment and long-read sequencing, SnISOr-Seq increased barcoded, exon-spanning long reads 7.5-fold compared to naive long-read single-nuclei sequencing.</description>
     </item>
     
     <item>
       <title>Tracking GI health</title>
-      <link>/projects/biotrac.html</link>
+      <link>https://anoushkajoglekar.com/projects/biotrac.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/biotrac.html</guid>
+      <guid>https://anoushkajoglekar.com/projects/biotrac.html</guid>
       <description>I took a class on Genomic Innovation this past semester, and we were evaluated on a group project. Recognizing that IBS and IBD are very real problems that plague millions of people with no immediate solution or respite, we proposed a lifestyle tracking system along with longitudinal microbiome sampling.. This is a quick and dirty r-shiny web app for Genomic Innovation class presentation. The idea is to track diet, symptoms, and microbiome composition of IBD patients so as to make predictions about potential flare-ups and make lifestyle recommendations</description>
     </item>
     
     <item>
       <title>CV</title>
-      <link>/cv.html</link>
+      <link>https://anoushkajoglekar.com/cv.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/cv.html</guid>
+      <guid>https://anoushkajoglekar.com/cv.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>scisorseqr: Standard Workflow</title>
-      <link>/blog/scisorseqr_standardworkflow.html</link>
+      <link>https://anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html</link>
       <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>/blog/scisorseqr_standardworkflow.html</guid>
+      <guid>https://anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html</guid>
       <description>The scisorseqr package allows you to go from short-read, single cell assignments and a set of fastq files to a full-blown cell-type specific analysis of alternative splicing patterns.
-Software required  STARlong (and corresponding genome index file) Minimap2 if not using STARlong samtools bedtools python version &amp;gt;= 3.7 with the following libraries  pandas multiprocessing    Step 1: Barcode deconvolution The first step is to deconvolve barcodes from either the PacBio or ONT fastq output For that the user needs to specify</description>
+Software required STARlong (and corresponding genome index file) Minimap2 if not using STARlong samtools bedtools python version &amp;gt;= 3.7 with the following libraries pandas multiprocessing Step 1: Barcode deconvolution The first step is to deconvolve barcodes from either the PacBio or ONT fastq output For that the user needs to specify</description>
     </item>
     
   </channel>

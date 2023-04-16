@@ -1,60 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>/publications/natcomms_2021.html</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/scisorseqr.html</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/sliso_seq.html</loc>
-  </url>
-  
-  <url>
-    <loc>/publications/naturebiotech_2018.html</loc>
-  </url>
-  
-  <url>
-    <loc>/projects/biotrac.html</loc>
-  </url>
-  
-  <url>
-    <loc>/publications.html</loc>
-  </url>
-  
-  <url>
-    <loc>/projects.html</loc>
-  </url>
-  
-  <url>
-    <loc>/blog.html</loc>
+    <loc>https://anoushkajoglekar.com/publications/natcomms_2021.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/projects/scisorseqr.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/projects/sliso_seq.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/publications/naturebiotech_2022.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/projects/biotrac.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/publications.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/projects.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/blog.html</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/cv.html</loc>
-  </url>
-  
-  <url>
-    <loc>/</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/cv.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/blog/scisorseqr_standardworkflow.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/blog/scisorseqr_standardworkflow.html</loc>
     <lastmod>2021-01-22T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/series.html</loc>
+  </url><url>
+    <loc>https://anoushkajoglekar.com/tags.html</loc>
   </url>
-  
-  <url>
-    <loc>/series.html</loc>
-  </url>
-  
-  <url>
-    <loc>/tags.html</loc>
-  </url>
-  
 </urlset>

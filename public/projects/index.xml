@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Anoushka</title>
-    <link>/projects.html</link>
+    <link>https://anoushkajoglekar.com/projects.html</link>
     <description>Recent content in Projects on Anoushka</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://anoushkajoglekar.com/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>scisorseqr</title>
-      <link>/projects/scisorseqr.html</link>
+      <link>https://anoushkajoglekar.com/projects/scisorseqr.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/scisorseqr.html</guid>
+      <guid>https://anoushkajoglekar.com/projects/scisorseqr.html</guid>
       <description>Quick access to the scisorseqr GitHub page. I describe the workflow of the package and all code is included under the MIT license.
 The vignette is hosted on a separate page of this website under Vignettes</description>
     </item>
     
     <item>
       <title>Spatial isoform expression</title>
-      <link>/projects/sliso_seq.html</link>
+      <link>https://anoushkajoglekar.com/projects/sliso_seq.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/sliso_seq.html</guid>
+      <guid>https://anoushkajoglekar.com/projects/sliso_seq.html</guid>
       <description>Exclusively spatial data pulled from the Nature Communications paper
 Same shiny app as before except with full-length transcripts instead of exons. Also kept an SQLite backend so the server doesn&amp;rsquo;t crash.
 Access shiny app here</description>
@@ -29,10 +29,10 @@ Access shiny app here</description>
     
     <item>
       <title>Tracking GI health</title>
-      <link>/projects/biotrac.html</link>
+      <link>https://anoushkajoglekar.com/projects/biotrac.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/projects/biotrac.html</guid>
+      <guid>https://anoushkajoglekar.com/projects/biotrac.html</guid>
       <description>I took a class on Genomic Innovation this past semester, and we were evaluated on a group project. Recognizing that IBS and IBD are very real problems that plague millions of people with no immediate solution or respite, we proposed a lifestyle tracking system along with longitudinal microbiome sampling.. This is a quick and dirty r-shiny web app for Genomic Innovation class presentation. The idea is to track diet, symptoms, and microbiome composition of IBD patients so as to make predictions about potential flare-ups and make lifestyle recommendations</description>
     </item>
     
