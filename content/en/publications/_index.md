@@ -9,7 +9,7 @@ weight: 30
 
 Belchikov N<sup>#</sup>, Hu W<sup>#</sup>, Fan L<sup>#</sup>, **Joglekar A**, … Gan L, Tilgner HU. A single-cell long-read isoform resolved case-control study of frontotemporal dementia reveals cell-type specific and broad splicing dysregulation in post-mortem human brain.
 
-**Joglekar A<sup>#</sup>**,Foord C^#, Jarroux J^#, Pollard S, Tilgner HU. Single-cell studies of transcript isoforms.
+**Joglekar A<sup>#</sup>**,Foord C<sup>#</sup>, Jarroux J<sup>#</sup>, Pollard S, Tilgner HU. Single-cell studies of transcript isoforms.
 
 ### Preprints:
 **Joglekar A**, Hu W, Zhang B, Narykov O, Diekhans M, ..., Ross ME, Tilgner HU. Single-cell long-read mRNA isoform regulation is pervasive across mammalian brain regions, cell types, and development *biorxiv*
