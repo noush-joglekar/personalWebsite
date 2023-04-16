@@ -2,9 +2,9 @@
 resources:
 - params:
     weight: -100
-  src: sliso.png
+  src: slingshot_trajectory.png
 title: Spatial isoform expression
-weight: 2
+weight: 3
 ---
 
 Exclusively spatial data pulled from the _Nature Communications_ paper
