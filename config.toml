@@ -47,10 +47,10 @@ uglyurls = true
         url   = "https://twitter.com/noush_joglekar"
         icon  = "twitter" # icon name without the 'fa-'
         icon_pack = "fab"
-    [[params.social]]
-        url = "mailto:anj2026@med.cornell.edu"  # For a direct email link, use "mailto:test@example.org".
-        icon = "envelope" # icon name without the 'fa-'
-        icon_pack = "fas"
+#   [[params.social]]
+#        url = "mailto:anj2026@med.cornell.edu"  # For a direct email link, use "mailto:test@example.org".
+#        icon = "envelope" # icon name without the 'fa-'
+#        icon_pack = "fas"
     [[params.social]]
         url   = "https://github.com/noush-joglekar/"
         icon  = "github" # icon name without the 'fa-'
